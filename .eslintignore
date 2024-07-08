@@ -1,0 +1,28 @@
+# 忽略 node_modules 目录
+node_modules/
+
+# 忽略打包输出目录
+dist/
+
+# 忽略 Vite 临时目录
+.vite/
+
+# 忽略 TypeScript 构建输出目录
+lib/
+build/
+
+# 忽略日志文件
+*.log
+
+# 忽略环境配置文件
+.env
+.env.local
+.env.*.local
+
+# 忽略特定文件
+*.min.js
+*.d.ts
+
+# 忽略特定目录
+coverage/
+public/

@@ -1,12 +1,16 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { HashRouter } from "react-router-dom";
+import { Provider } from 'react-redux'
+import store from './store'
+import { HashRouter } from 'react-router-dom'
 
 import App from './App.tsx'
 import 'normalize.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <HashRouter>
-    <App />
+  <Provider store={store}>
+    <HashRouter>
+      <App />
     </HashRouter>
+  </Provider>
 )
